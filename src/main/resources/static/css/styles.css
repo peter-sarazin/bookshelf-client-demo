@@ -1,0 +1,43 @@
+.logo-link:link
+{
+	color: #000;
+}
+
+.logo.link:visited
+{
+	color: #000;
+}
+
+.logo-link:hover
+{
+	text-decoration: none;
+}
+
+.dark-link
+{
+	color : #8094B4;
+/* 	color : #808DA0; */
+}
+
+.dark-link:link
+{
+	color : #DDDDDD;
+}
+
+.dark-link:visted
+{
+	color : #DDDDDD;
+}
+
+.dark-link:hover
+{
+	text-decoration: none;
+	color : #BFC9D9;
+}
+
+.dark-link:active
+{
+	text-decoration: none;
+	color : #CCCCCC;
+}
+

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" th:href="@{/css/styles.css}" href="css/styles.css" />
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+<!-- 		<script src="includes/js/modernizr-2.6.2.min.js"></script> -->
+		
+	</head>
+	<body>
+		<div th:replace="fragments/header :: header">header</div>
+		<div class="container" id="main" style="background: #eee">
+			
+		<div class="row" style="padding-top: 15px">
+			<div class="col-sm-6">
+				<h2>All Books</h2>
+			</div>
+			<div class="col-sm-6 text-right" >
+				<a href="/addBook" class="btn btn-success" role="button">Add Book</a>
+			</div>
+		</div>
+		
+			<div class="row">
+				<div th:each="book : ${bookList}" class="col-sm-6 col-md-6 col-lg-4 col-xl-3 pb-4">
+					<div class="card card-outline-info ">
+						<div class="card-header mb-3" style="color : #EEEEEE; background-color : #002868;">
+							<div  class="card-title"><a class="dark-link" th:href="|@{/viewBook/}${book.bookId}|" th:text="${book.title}">book title</a></div>
+						</div>
+						<div class="card-body">
+							<a th:href="|@{/viewBook/}${book.bookId}|"><img th:src="${book.imageUrl}" height=150/></a>
+							<br/>
+							<small>publisher:</small>&nbsp;&nbsp; <span th:text="${book.publisher.name}">publisher name</span><br/>						
+							<small>isbn:</small>&nbsp;&nbsp;<span th:text="${book.isbn}">isbn</span><br/>
+							<small>price:</small>&nbsp;&nbsp;<span th:text="${#numbers.formatCurrency(book.price)}">price</span><br/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+<!-- 			<table> -->
+<!-- 				<tr th:each="book : ${bookList}"> -->
+<!-- 					<td th:text="${book.title}">War And Peace</td> -->
+<!-- 				</tr> -->
+<!-- 			</table> -->
+
+		
+		</div>
+
+<!-- 		<div th:replace="fragments/footer :: footer">footer</div> -->
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		
+	</body>
+</html>
