@@ -1,12 +1,12 @@
-package com.petersarazin.books.client.thymeleaf;
+package com.petersarazin.bookshelf.client.thymeleaf;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BooksClientThymeleafApplication {
+public class BookshelfClientThymeleafApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BooksClientThymeleafApplication.class, args);
+		SpringApplication.run(BookshelfClientThymeleafApplication.class, args);
 	}
 }

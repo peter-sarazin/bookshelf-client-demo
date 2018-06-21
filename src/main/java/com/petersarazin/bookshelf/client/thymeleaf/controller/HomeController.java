@@ -1,4 +1,4 @@
-package com.petersarazin.books.client.thymeleaf.controller;
+package com.petersarazin.bookshelf.client.thymeleaf.controller;
 
 
 import java.util.List;

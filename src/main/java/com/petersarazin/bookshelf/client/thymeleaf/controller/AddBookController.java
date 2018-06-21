@@ -1,4 +1,4 @@
-package com.petersarazin.books.client.thymeleaf.controller;
+package com.petersarazin.bookshelf.client.thymeleaf.controller;
 
 import java.util.List;
 import java.util.Map;
@@ -21,14 +21,14 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.petersarazin.books.client.thymeleaf.model.BookForAddModel;
-import com.petersarazin.books.client.thymeleaf.validator.BookForAddModelValidator;
 import com.petersarazin.books.dto.AuthorDto;
 import com.petersarazin.books.dto.BookForAddDto;
 import com.petersarazin.books.dto.PublisherDto;
 import com.petersarazin.books.dto.response.AddBookResponse;
 import com.petersarazin.books.dto.response.GetAuthorsResponse;
 import com.petersarazin.books.dto.response.GetPublishersResponse;
+import com.petersarazin.bookshelf.client.thymeleaf.model.BookForAddModel;
+import com.petersarazin.bookshelf.client.thymeleaf.validator.BookForAddModelValidator;
 
 @Controller
 public class AddBookController {
