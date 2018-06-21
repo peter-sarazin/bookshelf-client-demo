@@ -1,4 +1,4 @@
-package com.petersarazin.bookshelf.client.thymeleaf;
+package com.petersarazin.bookshelf;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
