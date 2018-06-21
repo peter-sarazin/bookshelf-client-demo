@@ -1,4 +1,4 @@
-package com.petersarazin.bookshelf.client.thymeleaf.properties;
+package com.petersarazin.bookshelf.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

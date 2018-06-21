@@ -1,10 +1,10 @@
-package com.petersarazin.bookshelf.client.thymeleaf.validator;
+package com.petersarazin.bookshelf.validator;
 
 import org.springframework.util.StringUtils;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
-import com.petersarazin.bookshelf.client.thymeleaf.model.BookForAddModel;
+import com.petersarazin.bookshelf.model.BookForAddModel;
 
 public class BookForAddModelValidator implements Validator {
 	

@@ -1,4 +1,4 @@
-package com.petersarazin.bookshelf.client.thymeleaf.model;
+package com.petersarazin.bookshelf.model;
 
 import java.math.BigDecimal;
 

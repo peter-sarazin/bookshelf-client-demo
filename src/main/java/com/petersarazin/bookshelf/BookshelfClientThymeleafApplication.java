@@ -1,4 +1,4 @@
-package com.petersarazin.bookshelf.client.thymeleaf;
+package com.petersarazin.bookshelf;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

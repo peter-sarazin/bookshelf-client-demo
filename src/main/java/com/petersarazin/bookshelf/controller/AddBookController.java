@@ -1,4 +1,4 @@
-package com.petersarazin.bookshelf.client.thymeleaf.controller;
+package com.petersarazin.bookshelf.controller;
 
 import java.util.List;
 import java.util.Map;
@@ -27,8 +27,8 @@ import com.petersarazin.books.dto.PublisherDto;
 import com.petersarazin.books.dto.response.AddBookResponse;
 import com.petersarazin.books.dto.response.GetAuthorsResponse;
 import com.petersarazin.books.dto.response.GetPublishersResponse;
-import com.petersarazin.bookshelf.client.thymeleaf.model.BookForAddModel;
-import com.petersarazin.bookshelf.client.thymeleaf.validator.BookForAddModelValidator;
+import com.petersarazin.bookshelf.model.BookForAddModel;
+import com.petersarazin.bookshelf.validator.BookForAddModelValidator;
 
 @Controller
 public class AddBookController {
