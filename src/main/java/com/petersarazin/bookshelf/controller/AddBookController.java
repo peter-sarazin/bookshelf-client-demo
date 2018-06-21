@@ -21,12 +21,12 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.petersarazin.books.dto.AuthorDto;
-import com.petersarazin.books.dto.BookForAddDto;
-import com.petersarazin.books.dto.PublisherDto;
-import com.petersarazin.books.dto.response.AddBookResponse;
-import com.petersarazin.books.dto.response.GetAuthorsResponse;
-import com.petersarazin.books.dto.response.GetPublishersResponse;
+import com.petersarazin.bookshelf.dto.AuthorDto;
+import com.petersarazin.bookshelf.dto.BookForAddDto;
+import com.petersarazin.bookshelf.dto.PublisherDto;
+import com.petersarazin.bookshelf.dto.response.AddBookResponse;
+import com.petersarazin.bookshelf.dto.response.GetAuthorsResponse;
+import com.petersarazin.bookshelf.dto.response.GetPublishersResponse;
 import com.petersarazin.bookshelf.model.BookForAddModel;
 import com.petersarazin.bookshelf.validator.BookForAddModelValidator;
 

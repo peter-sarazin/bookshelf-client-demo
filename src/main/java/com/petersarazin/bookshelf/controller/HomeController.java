@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.petersarazin.books.dto.BookDto;
-import com.petersarazin.books.dto.response.GetBooksResponse;
+import com.petersarazin.bookshelf.dto.BookDto;
+import com.petersarazin.bookshelf.dto.response.GetBooksResponse;
 
 @Controller
 public class HomeController {
