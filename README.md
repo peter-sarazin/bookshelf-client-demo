@@ -15,7 +15,7 @@ Example:
 java -jar books-client-thymeleaf-0.0.1-SNAPSHOT.jar
 ```
 
-The defualt port that this application runs on is 8080.
+The default port that this application runs on is 8080.
 
 You can override the default port number in application.properties and you can also ovveride the port number on the commandline at startup.  Example:
 
