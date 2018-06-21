@@ -3,7 +3,7 @@ Demo of a client web application created with Spring Boot, Thymeleaf, and Bootst
 
 In order to run this you will need to get the bookshelf-service-demo first and run it as a Spring Boot App.
 
-Then run this application as a Spring Boot App.
+Once you build it with maven then you can run this application as a Spring Boot App.
 
 There are several ways to run an application as a Spring Boot App:
 
